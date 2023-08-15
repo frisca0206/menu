@@ -29,6 +29,12 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="<?= url_to('sewa_buku') ?>" class="nav-link">
+                        <i class="fas fa-book-open nav-icon"></i>
+                        <p>Sewa Buku</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="<?= url_to('film') ?>" class="nav-link">
                         <i class="fas fa-film nav-icon"></i>
                         <p>Film</p>
@@ -41,12 +47,18 @@
                     </a>
                 </li>
                 <li class="nav-item">
+                    <a href="<?= url_to('sewa_film') ?>" class="nav-link">
+                        <i class="fas fa-file-video  nav-icon"></i>
+                        <p>Sewa Film</p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="<?= url_to('food') ?>" class="nav-link">
                         <i class="fas fa-pizza-slice nav-icon"></i>
                         <p>Food</p>
                     </a>
                 </li>
-                
+
             </ul>
         </nav>
         <!-- /.sidebar-menu -->

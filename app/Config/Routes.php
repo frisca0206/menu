@@ -64,6 +64,22 @@ $routes->get('/genre/create', 'GenreController::create',['as' => 'genre-create']
 $routes->post('/genre/store', 'GenreController::store',['as' => 'genre-store']);
 $routes->post('/genre/update', 'GenreController::update',['as' => 'genre-update']);
 
+
+$routes->get('/sewa_buku', 'Sewa_BukuController::index',['as' => 'sewa_buku']);
+$routes->get('/sewa_buku/edit/(:num)', 'Sewa_BukuController::edit/$1',['as' => 'sewa_buku-edit']);
+$routes->get('/sewa_buku/delete/(:num)', 'Sewa_BukuController::delete/$1', ['as' => 'sewa_buku-delete']);
+$routes->get('/sewa_buku/create', 'Sewa_BukuController::create',['as' => 'sewa_buku-create']);
+$routes->post('/sewa_buku/store', 'Sewa_BukuController::store',['as' => 'sewa_buku-store']);
+$routes->post('/sewa_buku/update', 'Sewa_BukuController::update',['as' => 'sewa_buku-update']);
+
+
+$routes->get('/sewa_film', 'Sewa_FilmController::index',['as' => 'sewa_film']);
+$routes->get('/sewa_film/edit(:num)', 'Sewa_FilmController::edit/$1',['as' => 'sewa_film-edit']);
+$routes->get('/sewa_film/delete(:num)', 'Sewa_FilmController::delete/$1',['as' => 'sewa_film-delete']);
+$routes->get('/sewa_film/create', 'Sewa_FilmController::create',['as' => 'sewa_film-create']);
+$routes->post('/sewa_film/store', 'Sewa_FilmController::store',['as' => 'sewa_film-store']);
+$routes->post('/sewa_film/update', 'Sewa_FilmController::update',['as' => 'sewa_film-update']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
