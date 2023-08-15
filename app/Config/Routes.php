@@ -41,6 +41,28 @@ $routes->post('/book/update', 'BookController::update',['as' => 'book-update']);
 $routes->get('/book/delete/(:num)', 'BookController::delete/$1',['as' => 'book-delete']);
 
 
+$routes->get('/film', 'FilmController::index',['as' => 'film']);
+$routes->get('/film/edit/(:num)', 'FilmController::edit/$1',['as' => 'film-edit']);
+$routes->get('/film/delete/(:num)', 'FilmController::delete/$1',['as' => 'film-delete']);
+$routes->get('/film/create', 'FilmController::create',['as' => 'film-create']);
+$routes->post('/film/store', 'FilmController::store',['as' => 'film-store']);
+$routes->post('/film/update', 'FilmController::update',['as' => 'film-update']);
+
+
+$routes->get('/food', 'FoodController::index',['as' => 'food']);
+$routes->get('/food/edit/(:num)', 'FoodController::edit/$1',['as' => 'food-edit']);
+$routes->get('/food/delete/(:num)', 'FoodController::delete/$1',['as' => 'food-delete']);
+$routes->get('/food/create', 'FoodController::create',['as' => 'food-create']);
+$routes->post('/food/store', 'FoodController::store',['as' => 'food-store']);
+$routes->post('/food/update', 'FoodController::update',['as' => 'food-update']);
+
+
+$routes->get('/genre', 'GenreController::index',['as' => 'genre']);
+$routes->get('/genre/edit/(:num)', 'GenreController::edit/$1',['as' => 'genre-edit']);
+$routes->get('/genre/delete/(:num)', 'GenreController::delete/$1', ['as' => 'genre-delete']);
+$routes->get('/genre/create', 'GenreController::create',['as' => 'genre-create']);
+$routes->post('/genre/store', 'GenreController::store',['as' => 'genre-store']);
+$routes->post('/genre/update', 'GenreController::update',['as' => 'genre-update']);
 
 /*
  * --------------------------------------------------------------------

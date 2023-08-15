@@ -28,6 +28,24 @@
                         <p>Books</p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('film') ?>" class="nav-link">
+                        <i class="fas fa-film nav-icon"></i>
+                        <p>Film</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('genre') ?>" class="nav-link">
+                        <i class="fas fa-meteor nav-icon"></i>
+                        <p>Genre</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= url_to('food') ?>" class="nav-link">
+                        <i class="fas fa-pizza-slice nav-icon"></i>
+                        <p>Food</p>
+                    </a>
+                </li>
                 
             </ul>
         </nav>
