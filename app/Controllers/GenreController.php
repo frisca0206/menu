@@ -72,7 +72,7 @@ class GenreController extends BaseController
     
     public function delete($genre_id)
     {
-        $this->GenreModel->delete($Genre_id);
+        $this->GenreModel->delete($genre_id);
         return redirect()->to('genre');
     }
 }

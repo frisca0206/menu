@@ -22,7 +22,7 @@ class FilmController extends BaseController
         $data = [
             'title' => 'Film Management',
             'page_title' => 'Film List',
-            'films' => $this->FilmModel->findAll()
+            'films' => $this->FilmModel->select('film.*,genre.genre')->join('genre','genre.id = film.genre_id')->findAll(),
         ];
         return view('film/index', $data);
     }
@@ -46,7 +46,7 @@ class FilmController extends BaseController
         
         $new_film = [
             'nama_film' => $nama_film,
-            'genre' => $genre,
+            'genre_id' => $genre,
             'deskripsi' => $deskripsi,
         ];
 
@@ -74,7 +74,7 @@ class FilmController extends BaseController
 
         $edit_film = [
             'nama_film' => $nama_film,
-            'genre' => $genre,
+            'genre_id' => $genre,
             'deskripsi' => $deskripsi,
         ];
 

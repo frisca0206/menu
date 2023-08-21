@@ -39,7 +39,7 @@
                                             <select id="genre" name="genre" class="form-control">
                                                 <option value=""></option>
                                                  <?php foreach ($genres as $key => $genre) : ?>
-                                                    <option value="<?php echo $genre['genre']; ?>" <?php if($film['genre'] == $genre['genre']) echo "selected"; ?>> <?php echo $genre['genre']; ?></option>
+                                                    <option value="<?php echo $genre['id']; ?>" <?php if($film['genre_id'] == $genre['id']) echo "selected"; ?>> <?php echo $genre['genre']; ?></option>
                                                 <?php endforeach ?>
                                             </select>
                                         </div>

@@ -13,7 +13,7 @@ class FilmModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['nama_film','genre','deskripsi'];
+    protected $allowedFields    = ['nama_film','genre_id','deskripsi'];
 
     // Dates
     protected $useTimestamps = false;

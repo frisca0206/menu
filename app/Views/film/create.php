@@ -37,7 +37,9 @@
                                             <select id="genre" name="genre" class="form-control">
                                                 <option value=""></option>
                                                 <?php foreach ($genres as $key => $genre) : ?>
-                                                    <option value="<?php echo $genre['genre']; ?>"><?php echo $genre['genre']; ?></option>
+                                                    <option value="<?php echo $genre['id']; ?>">
+                                                    <?php echo $genre['genre']; ?>
+                                                </option>
                                                 <?php endforeach ?>
                                             </select>
                                         </div>
